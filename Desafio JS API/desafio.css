@@ -1,0 +1,125 @@
+/* geral */
+body {
+    margin: 0;
+    font-family: Roboto;
+}
+
+#error-message {
+    color: red;
+    font-weight: bold;
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;/*espaço entre os itens*/
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(31, 115, 212);
+    color: #fff;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    justify-content: space-between;
+    align-items: center; /*centralizar verticalmente*/
+    text-align: center;
+}
+
+.container img.logo {
+    height: 80px;
+    width: auto;
+    left: 20px;
+    top: 20px;
+    position: absolute;
+}
+
+.container h1 {
+    font-size:50px;
+    font-family:fantasy;
+    color: rgb(0, 0, 252);
+    text-shadow: 
+    -1px -1px 0 yellow, /* sombra superior esquerda */
+    1px -1px 0 yellow,  /* sombra superior direita */
+    -1px 1px 0 yellow,  /* sombra inferior esquerda */
+    1px 1px 0 yellow;   /* sombra inferior direita */
+    margin: 0;
+  
+}
+.container h2 {
+    margin: 0;
+    font-size: 30px;
+    font-weight: normal;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px;/* Espaço entre os itens de navegação */
+    position: absolute; /* Posiciona os links de navegação fora do fluxo normal */
+    right: 20px;/* Posiciona os links no canto direito */
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+   transition: color 0.3s ease;/*animação ao passar o mouse*/
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+/*contato*/
+.contact-section {
+    display: flex;
+    flex-direction: column; /* Empilha os elementos verticalmente */
+    align-items: center; /* Centraliza os itens */
+    justify-content: center;
+    height: 30vh;
+    padding: 20px;
+    gap: 15px;/* Espaçamento entre os inputs e o botão */
+}
+
+.contact-section h3{
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+#contact-form {
+    display: flex;
+    flex-direction: column; /* Empilha os inputs e o botão verticalmente */
+    align-items: center; /* Centraliza os itens */
+    gap: 15px; /* Espaçamento entre os inputs e o botão */
+}
+#contact-form input {
+    width: 300px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+
+  #contact-form button {
+    width: 150px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  #contact-form button:hover {
+    background-color: #ff6347; /* Tom laranja ao passar o mouse */
+  }

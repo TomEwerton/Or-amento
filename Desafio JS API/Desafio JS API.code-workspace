@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../Node.js mod19"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Desafio JS API"
+	}
+}
